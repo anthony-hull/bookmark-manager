@@ -2,7 +2,8 @@
 
 feature 'Feature Tests' do
   scenario 'Displays Hello World' do
-    visit('/')
-    expect(page).to have_content 'Hello World'
+    visit('/bookmarks')
+    expect(page).to have_title 'Bookmarks'
   end
+
 end
