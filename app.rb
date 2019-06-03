@@ -1,7 +1,7 @@
 require 'sinatra/base'
-# require './lib/bookmark'
+require './lib/bookmark'
 
-class Bookmark < Sinatra::Base
+class BookmarkManager < Sinatra::Base
 
   get '/' do 
     'Bookmark Manager'

@@ -1,5 +1,4 @@
 
-require 'bookmark'
 
 feature 'Bookmark' do
   scenario 'Displays bookmarks title' do
