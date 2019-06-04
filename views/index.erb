@@ -1,7 +1,6 @@
 <title>Bookmarks</title>
-<% @title.each do |bookmark| %> 
-    <li> <%= bookmark %> </li> 
-<% end %> 
-<% @url.each do |bookmark| %> 
-    <li> <%= bookmark %> </li> 
+<% @bookmarks.each do |bookmark| %> 
+    <li> <%= bookmark.id %> </li> <br>
+    <li> <%= bookmark.title %> </li> <br>
+    <li> <%= bookmark.url %> </li> 
 <% end %> 
