@@ -6,7 +6,9 @@ require 'simplecov'
 require 'simplecov-console'
 require 'rack/test'
 require './app'
+require './spec/db_helper'
 
+ENV['ENVIRONMENT'] = 'test'
 ENV['RACK_ENV'] = 'test'
 Capybara.app = BookmarkManager
 
