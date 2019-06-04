@@ -28,4 +28,10 @@ feature 'Bookmark' do
     click_button 'Submit'
     expect(page).to have_content 'Nyan'
   end
+
+  scenario 'deletes a link' do
+    visit '/bookmarks' 
+    click_button 'Delete Google'
+    expect(page).not_to have_link('Google')
+  end
 end

@@ -29,4 +29,11 @@ describe 'Bookmark' do
       expect(bookmarks[1].url).to eq("http://www.destroyallsoftward.com")
       expect(bookmarks[2].url).to eq("http://google.com")
   end
+
+  it 'deletes a bookmark' do 
+    Bookmark.delete(3)
+    bookmarks = Bookmark.all
+    bookmarks_t = bookmarks.map { |x| x.title }
+    expect(bookmarks_t).not_to include('Google')
+  end 
 end 
