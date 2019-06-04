@@ -15,14 +15,14 @@ feature 'Bookmark' do
   end
 
   scenario 'creates new bookmark' do 
-    visit('/add-bookmark')
+    visit('/bookmarks/add')
     fill_in 'url', with: 'http://nyan.cat'
     click_button 'Submit'
     expect(page).to have_link(nil, href:'http://nyan.cat')
   end 
 
   scenario 'displays title' do 
-    visit('/add-bookmark')
+    visit('/bookmarks/add')
     fill_in 'url', with: 'http://nyan.cat'
     fill_in 'title', with: 'Nyan'
     click_button 'Submit'
