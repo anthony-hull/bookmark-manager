@@ -1,10 +1,6 @@
 
 
 feature 'Bookmark' do
-  scenario 'Displays bookmarks title' do
-    visit('/bookmarks')
-    expect(page).to have_title 'Bookmarks'
-  end
 
   scenario 'Displays bookmarks' do
     visit('/bookmarks')
@@ -13,11 +9,27 @@ feature 'Bookmark' do
     expect(page).to have_content "http://www.makersacademy.com"
   end
 
+  scenario 'Displays bookmarks title' do
+    visit('/bookmarks')
+    expect(page).to have_content "Destroy"
+    expect(page).to have_content "Google"
+    expect(page).to have_content "Makers Academy"
+  end
+
   scenario 'creates new bookmark' do 
     visit('/add-bookmark')
     fill_in 'url', with: 'http://nyan.cat'
     click_button 'Submit'
     expect(page).to have_content 'http://nyan.cat'
   end 
+
+
+  scenario 'displays title' do 
+    visit('/add-bookmark')
+    fill_in 'url', with: 'http://nyan.cat'
+    fill_in 'name', with: 'Nyan'
+    click_button 'Submit'
+    expect(page).to have_content 'Nyan'
+  end
 
 end

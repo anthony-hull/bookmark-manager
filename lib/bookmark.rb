@@ -10,10 +10,16 @@ class Bookmark
     end
   end 
 
-  def self.all
+  def self.title
     Bookmark.create_connection
-    result = @connection.exec("SELECT * FROM bookmarks;")
-    result.map { |bookmark| bookmark['url']}
+    result = @connection.exec("SELECT title FROM bookmarks;")
+    result.map { |bookmark| bookmark['title'] } 
+  end
+
+  def self.url
+    Bookmark.create_connection
+    result = @connection.exec("SELECT url FROM bookmarks;")
+    result.map { |bookmark| bookmark['url'] } 
   end
 
   def self.add(url)
