@@ -10,4 +10,9 @@ describe 'Bookmark' do
     expect(bookmarks).to include "http://google.com"
     expect(bookmarks).to include "http://www.destroyallsoftward.com"
   end 
+
+  it 'adds a new URL' do 
+    Bookmark.add('http://nyan.cat')
+    expect(Bookmark.all).to include 'http://nyan.cat'
+  end 
 end 
