@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/projects/bookmarks/spec/bookmark_spec.rb": [
+      "/Users/anthonyhull/workspaces/bookmark_manager_lauren/bookmark_manager_me/spec/bookmark_spec.rb": [
         1,
         null,
         1,
@@ -28,7 +28,7 @@
         null,
         null
       ],
-      "/Users/student/projects/bookmarks/spec/features/app_spec.rb": [
+      "/Users/anthonyhull/workspaces/bookmark_manager_lauren/bookmark_manager_me/spec/features/app_spec.rb": [
         null,
         null,
         1,
@@ -66,6 +66,6 @@
         null
       ]
     },
-    "timestamp": 1559657533
+    "timestamp": 1559659445
   }
 }
