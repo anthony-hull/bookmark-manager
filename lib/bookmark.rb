@@ -35,4 +35,9 @@ class Bookmark
     Bookmark.create_connection
     @connection.exec("DELETE FROM bookmarks WHERE id = #{id}")
   end 
+
+  def self.update(id:, url:, title:)
+    Bookmark.create_connection
+    @connection.exec("UPDATE bookmarks SET title = '#{title}', url = '#{url}' WHERE id = #{id}")
+  end
 end

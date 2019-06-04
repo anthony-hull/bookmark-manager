@@ -7,6 +7,11 @@
             Delete <%= bookmark.title %>
         </button>
     </form>
+        <form type='submit' method='get' action='/bookmarks/<%= bookmark.id %>/edit'> 
+        <button>
+            Update <%= bookmark.title %>
+        </button>
+    </form>
     </li>  
 <% end %> 
 <a href="/bookmarks/add">Add a new bookmark</a>

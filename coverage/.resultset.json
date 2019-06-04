@@ -40,6 +40,13 @@
         3,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
         null
       ],
       "/Users/student/projects/bookmarks/spec/features/app_spec.rb": [
@@ -79,9 +86,17 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ]
     },
-    "timestamp": 1559666403
+    "timestamp": 1559668229
   }
 }

@@ -34,4 +34,12 @@ feature 'Bookmark' do
     click_button 'Delete Google'
     expect(page).not_to have_link('Google')
   end
+
+  scenario 'updates Google title' do 
+    visit '/bookmarks'
+    click_button 'Update Google'
+    fill_in 'title', with: 'Yahoo'
+    click_button 'Submit'
+    expect(page).to have_content('Yahoo')
+  end 
 end

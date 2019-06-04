@@ -31,9 +31,16 @@ describe 'Bookmark' do
   end
 
   it 'deletes a bookmark' do 
-    Bookmark.delete(3)
+    Bookmark.delete(id: 3)
     bookmarks = Bookmark.all
     bookmarks_t = bookmarks.map { |x| x.title }
     expect(bookmarks_t).not_to include('Google')
+  end 
+
+  it 'updates a bookmark' do 
+    Bookmark.update(id: 3,url: 'www.yahoo.co.uk',title: 'Yahoo')
+    bookmarks = Bookmark.all
+    bookmarks_t = bookmarks.map { |x| x.title }
+    expect(bookmarks_t).to include('Yahoo')
   end 
 end 

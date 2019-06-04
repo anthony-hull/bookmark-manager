@@ -1,0 +1,13 @@
+<form method='post' action='/bookmarks/<%=@id%>'>
+  <div>
+    <label for='url'> URL: </label>
+    <input type = 'text' name='url'> 
+  </div>
+  <div>
+    <label for='title'> Title: </label>
+    <input type = 'text' name='title'> 
+  </div>
+  <div class="button">
+    <button name='_method' value='PATCH' type='submit'>Submit</button>
+  </div>
+</form>
