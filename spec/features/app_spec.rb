@@ -21,13 +21,11 @@ feature 'Bookmark' do
     expect(page).to have_link(nil, href:'http://nyan.cat')
   end 
 
-
-  pending 'displays title' do 
+  scenario 'displays title' do 
     visit('/add-bookmark')
     fill_in 'url', with: 'http://nyan.cat'
     fill_in 'title', with: 'Nyan'
     click_button 'Submit'
     expect(page).to have_content 'Nyan'
   end
-
 end

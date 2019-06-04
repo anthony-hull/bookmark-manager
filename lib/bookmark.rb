@@ -26,8 +26,8 @@ class Bookmark
     end
   end 
 
-  def self.add(url)
+  def self.add(url,title)
     Bookmark.create_connection
-    @connection.exec("INSERT INTO bookmarks (url) VALUES ('#{url}')")
+    @connection.exec("INSERT INTO bookmarks (url,title) VALUES ('#{url}','#{title}')")
   end 
 end

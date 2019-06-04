@@ -4,10 +4,11 @@ describe 'Bookmark' do
   let(:bookmark) { Bookmark.new }
   
 
-  it 'adds a new URL' do 
-    Bookmark.add('http://nyan.cat')
+  it 'adds a new bookmark with title and url' do 
+    Bookmark.add('http://nyan.cat', 'Nyan')
     bookmarks = Bookmark.all
     expect(bookmarks[3].url).to eq 'http://nyan.cat'
+    expect(bookmarks[3].title).to eq 'Nyan'
   end 
 
   it 'return array of instances of self' do 
