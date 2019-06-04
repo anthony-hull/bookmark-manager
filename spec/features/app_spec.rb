@@ -24,7 +24,7 @@ feature 'Bookmark' do
   end 
 
 
-  scenario 'displays title' do 
+  pending 'displays title' do 
     visit('/add-bookmark')
     fill_in 'url', with: 'http://nyan.cat'
     fill_in 'title', with: 'Nyan'

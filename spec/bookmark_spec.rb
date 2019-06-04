@@ -22,4 +22,14 @@ describe 'Bookmark' do
     Bookmark.add('http://nyan.cat')
     expect(Bookmark.url).to include 'http://nyan.cat'
   end 
+
+  it 'return array of instances of self' do 
+    bookmarks = Bookmark.all
+    expect(bookmarks.first).to be_an_instance_of(Bookmark)
+  end 
+
+  it 'return array of instances of self' do 
+    bookmarks = Bookmark.all
+    expect(bookmarks.first.title).to eq('Makers Academy')
+  end 
 end 
