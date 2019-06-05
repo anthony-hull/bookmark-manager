@@ -10,34 +10,26 @@ class Bookmark
   end
 
   def self.all
-    Bookmark.create_connection
-    result = @connection.exec("SELECT * FROM bookmarks")
+    Database.setup
+    result = Database.query("SELECT * FROM bookmarks")
     result.map do |bookmark|
       Bookmark.new(id: bookmark['id'], title: bookmark['title'], url: bookmark['url'])
     end
 
   end
 
-  def self.create_connection
-    if ENV['ENVIRONMENT']== 'test'
-      @connection = PG.connect(dbname: 'bookmark_manager_test')
-    else
-      @connection = PG.connect(dbname: 'bookmark_manager')
-    end
-  end 
-
   def self.add(url,title)
-    Bookmark.create_connection
-    @connection.exec("INSERT INTO bookmarks (url,title) VALUES ('#{url}','#{title}')")
+    Database.setup
+    Database.query("INSERT INTO bookmarks (url,title) VALUES ('#{url}','#{title}')")
   end 
 
   def self.delete(id:)
-    Bookmark.create_connection
-    @connection.exec("DELETE FROM bookmarks WHERE id = #{id}")
+    Database.setup
+    Database.query("DELETE FROM bookmarks WHERE id = #{id}")
   end 
 
   def self.update(id:, url:, title:)
-    Bookmark.create_connection
-    @connection.exec("UPDATE bookmarks SET title = '#{title}', url = '#{url}' WHERE id = #{id}")
+    Database.setup
+    Database.query("UPDATE bookmarks SET title = '#{title}', url = '#{url}' WHERE id = #{id}")
   end
 end

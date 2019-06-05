@@ -7,6 +7,7 @@ require 'simplecov-console'
 require 'rack/test'
 require './app'
 require './spec/db_helper'
+require 'pry-byebug'
 
 ENV['ENVIRONMENT'] = 'test'
 ENV['RACK_ENV'] = 'test'
