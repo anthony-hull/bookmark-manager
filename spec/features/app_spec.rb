@@ -13,15 +13,6 @@ feature 'Bookmark' do
     expect(page).to have_content 'Makers Academy'
   end
 
-
-  scenario 'displays title' do
-    visit('/bookmarks/add')
-    fill_in 'url', with: 'http://nyan.cat'
-    fill_in 'title', with: 'Nyan'
-    click_button 'Submit'
-    expect(page).to have_content 'Nyan'
-  end
-
   scenario 'deletes a link' do
     visit '/bookmarks'
     click_button 'Delete Google'

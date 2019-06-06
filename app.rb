@@ -2,11 +2,13 @@ require 'sinatra/base'
 require './lib/bookmark'
 require './lib/database'
 require 'uri'
+require 'sinatra/flash'
 
 
 class BookmarkManager < Sinatra::Base
   enable :method_override
   enable :sessions
+  register Sinatra::Flash
 
   get '/' do
     redirect '/bookmarks'
@@ -37,14 +39,15 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks/add' do
+
     if params[:url] =~ /\A#{URI::regexp(['http', 'https'])}\z/
       Bookmark.add(params[:url], params[:title])
       redirect '/bookmarks'
     else
-      session[:error] = 'boogaloo is not a valid url'
+      # session[:error] = 'boogaloo is not a valid url'
+      flash[:notice] = "boogaloo is not a valid url"
       redirect '/bookmarks/add'
     end
-
   end
 
   run! if app_file == $PROGRAM_NAME

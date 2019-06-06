@@ -1,3 +1,4 @@
+<%= flash[:notice] %>
 <form method='post' action='/bookmarks/add'>
   <div>
     <label for='url'> URL: </label>
@@ -11,4 +12,3 @@
     <button type='submit'>Submit</button>
   </div>
 </form>
-<%= session[:error] %>
