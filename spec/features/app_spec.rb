@@ -13,12 +13,6 @@ feature 'Bookmark' do
     expect(page).to have_content 'Makers Academy'
   end
 
-  scenario 'creates new bookmark' do
-    visit('/bookmarks/add')
-    fill_in 'url', with: 'http://nyan.cat'
-    click_button 'Submit'
-    expect(page).to have_link(nil, href: 'http://nyan.cat')
-  end
 
   scenario 'displays title' do
     visit('/bookmarks/add')
