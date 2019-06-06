@@ -1,6 +1,6 @@
 require 'pg'
 
-class Bookmark 
+class Bookmark
   attr_reader :id, :title, :url
 
   def initialize(id:, title:, url:)
@@ -11,22 +11,21 @@ class Bookmark
 
   def self.all
     Database.setup
-    result = Database.query("SELECT * FROM bookmarks")
+    result = Database.query('SELECT * FROM bookmarks')
     result.map do |bookmark|
       Bookmark.new(id: bookmark['id'], title: bookmark['title'], url: bookmark['url'])
     end
-
   end
 
-  def self.add(url,title)
+  def self.add(url, title)
     Database.setup
     Database.query("INSERT INTO bookmarks (url,title) VALUES ('#{url}','#{title}')")
-  end 
+  end
 
   def self.delete(id:)
     Database.setup
     Database.query("DELETE FROM bookmarks WHERE id = #{id}")
-  end 
+  end
 
   def self.update(id:, url:, title:)
     Database.setup
