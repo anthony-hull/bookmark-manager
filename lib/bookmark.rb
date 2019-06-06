@@ -18,8 +18,11 @@ class Bookmark
   end
 
   def self.add(url, title)
+    @url = url
+    return false unless valid_url?
     Database.setup
     Database.query("INSERT INTO bookmarks (url,title) VALUES ('#{url}','#{title}')")
+    true
   end
 
   def self.delete(id:)
@@ -30,5 +33,11 @@ class Bookmark
   def self.update(id:, url:, title:)
     Database.setup
     Database.query("UPDATE bookmarks SET title = '#{title}', url = '#{url}' WHERE id = #{id}")
+  end
+
+  private
+
+  def self.valid_url?
+    @url =~ /\A#{URI::regexp(['http', 'https'])}\z/
   end
 end

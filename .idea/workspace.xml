@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12255d51-8660-4269-8ea2-4958941f03e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/bookmark_manager_me.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bookmark_manager_me.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.last_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.last_run.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/bookmark.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bookmark.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/bookmark_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/bookmark_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/features/add_bookmark_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/add_bookmark_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/features/app_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/app_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/add.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/add.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/features/add_bookmark_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="241">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/bookmark.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -50,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="355">
+              <caret line="44" column="61" lean-forward="true" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -71,17 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/bookmark_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/bookmark.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="513">
+              <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -121,8 +116,10 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/views/add.erb" />
         <option value="$PROJECT_DIR$/spec/features/app_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/features/add_bookmark_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/bookmark.rb" />
+        <option value="$PROJECT_DIR$/spec/bookmark_spec.rb" />
         <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/spec/features/add_bookmark_spec.rb" />
       </list>
     </option>
   </component>
@@ -258,6 +255,39 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Bookmark returns false for an invalid URL: bookmark_manager_me" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <module name="bookmark_manager_me" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/bookmark_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Bookmark returns false for an invalid URL" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Bookmark: bookmark_manager_me" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="bookmark_manager_me" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -351,13 +381,15 @@
       <item itemvalue="RSpec.All specs in bookmark_manager_me: bookmark_manager_me" />
       <item itemvalue="RSpec.Bookmark: bookmark_manager_me" />
       <item itemvalue="RSpec.Bookmark displays title: bookmark_manager_me" />
+      <item itemvalue="RSpec.Bookmark returns false for an invalid URL: bookmark_manager_me" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="RSpec.All specs in bookmark_manager_me: bookmark_manager_me" />
+        <item itemvalue="RSpec.adds bookmark creates invalid bookmark: bookmark_manager_me" />
+        <item itemvalue="RSpec.Bookmark returns false for an invalid URL: bookmark_manager_me" />
         <item itemvalue="RSpec.Bookmark displays title: bookmark_manager_me" />
         <item itemvalue="RSpec.Bookmark: bookmark_manager_me" />
-        <item itemvalue="RSpec.adds bookmark creates invalid bookmark: bookmark_manager_me" />
       </list>
     </recent_temporary>
   </component>
@@ -372,51 +404,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559815084104</updated>
-      <workItem from="1559815085556" duration="6110000" />
+      <workItem from="1559815085556" duration="7662000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="adds_bookmark_creates_invalid_bookmark__bookmark_manager_me - 2019.06.06 at 14h 58m 01s.xml">
-      <configuration name="adds bookmark creates invalid bookmark: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="adds_bookmark_creates_invalid_bookmark__bookmark_manager_me - 2019.06.06 at 14h 58m 06s.xml">
-      <configuration name="adds bookmark creates invalid bookmark: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="adds_bookmark_creates_invalid_bookmark__bookmark_manager_me - 2019.06.06 at 14h 58m 36s.xml">
-      <configuration name="adds bookmark creates invalid bookmark: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="adds_bookmark_creates_invalid_bookmark__bookmark_manager_me - 2019.06.06 at 14h 59m 18s.xml">
-      <configuration name="adds bookmark creates invalid bookmark: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Bookmark__bookmark_manager_me - 2019.06.06 at 15h 00m 00s.xml">
-      <configuration name="Bookmark: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_bookmark_manager_me__bookmark_manager_me - 2019.06.06 at 15h 02m 30s.xml">
+    <history-entry file="All_specs_in_bookmark_manager_me__bookmark_manager_me - 2019.06.06 at 15h 22m 18s.xml">
       <configuration name="All specs in bookmark_manager_me: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Bookmark__bookmark_manager_me - 2019.06.06 at 15h 02m 50s.xml">
-      <configuration name="Bookmark: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_bookmark_manager_me__bookmark_manager_me - 2019.06.06 at 15h 35m 40s.xml">
+      <configuration name="All specs in bookmark_manager_me: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Bookmark_displays_title__bookmark_manager_me - 2019.06.06 at 15h 10m 32s.xml">
-      <configuration name="Bookmark displays title: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_bookmark_manager_me__bookmark_manager_me - 2019.06.06 at 15h 36m 08s.xml">
+      <configuration name="All specs in bookmark_manager_me: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Bookmark_displays_title__bookmark_manager_me - 2019.06.06 at 15h 18m 32s.xml">
-      <configuration name="Bookmark displays title: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Bookmark_returns_false_for_an_invalid_URL__bookmark_manager_me - 2019.06.06 at 15h 46m 07s.xml">
+      <configuration name="Bookmark returns false for an invalid URL: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_bookmark_manager_me__bookmark_manager_me - 2019.06.06 at 15h 22m 18s.xml">
+    <history-entry file="Bookmark_returns_false_for_an_invalid_URL__bookmark_manager_me - 2019.06.06 at 15h 46m 37s.xml">
+      <configuration name="Bookmark returns false for an invalid URL: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_bookmark_manager_me__bookmark_manager_me - 2019.06.06 at 15h 50m 10s.xml">
+      <configuration name="All specs in bookmark_manager_me: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_bookmark_manager_me__bookmark_manager_me - 2019.06.06 at 15h 51m 36s.xml">
+      <configuration name="All specs in bookmark_manager_me: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_bookmark_manager_me__bookmark_manager_me - 2019.06.06 at 15h 52m 10s.xml">
+      <configuration name="All specs in bookmark_manager_me: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="adds_bookmark_creates_invalid_bookmark__bookmark_manager_me - 2019.06.06 at 15h 52m 47s.xml">
+      <configuration name="adds bookmark creates invalid bookmark: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_bookmark_manager_me__bookmark_manager_me - 2019.06.06 at 15h 52m 54s.xml">
       <configuration name="All specs in bookmark_manager_me: bookmark_manager_me" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6110000" />
+    <option name="totallyTimeSpent" value="7662000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1122" extended-state="6" />
+    <frame x="-1" y="23" width="1920" height="1122" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16134185" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -441,10 +473,11 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bookmark_manager_me@adds_bookmark_creates_invalid_bookmark__bookmark_manager_me.rcov" NAME="adds bookmark creates invalid bookmark: bookmark_manager_me Coverage Results" MODIFIED="1559829556257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bookmark_manager_me" />
-    <SUITE FILE_PATH="coverage/bookmark_manager_me@All_specs_in_bookmark_manager_me__bookmark_manager_me.rcov" NAME="All specs in bookmark_manager_me: bookmark_manager_me Coverage Results" MODIFIED="1559830936655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bookmark_manager_me" />
+    <SUITE FILE_PATH="coverage/bookmark_manager_me@adds_bookmark_creates_invalid_bookmark__bookmark_manager_me.rcov" NAME="adds bookmark creates invalid bookmark: bookmark_manager_me Coverage Results" MODIFIED="1559832765507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bookmark_manager_me" />
+    <SUITE FILE_PATH="coverage/bookmark_manager_me@All_specs_in_bookmark_manager_me__bookmark_manager_me.rcov" NAME="All specs in bookmark_manager_me: bookmark_manager_me Coverage Results" MODIFIED="1559832772046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bookmark_manager_me" />
     <SUITE FILE_PATH="coverage/bookmark_manager_me@Bookmark_displays_title__bookmark_manager_me.rcov" NAME="Bookmark displays title: bookmark_manager_me Coverage Results" MODIFIED="1559830711205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bookmark_manager_me" />
     <SUITE FILE_PATH="coverage/bookmark_manager_me@run_the_thing.rcov" NAME="run the thing Coverage Results" MODIFIED="1559830894816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bookmark_manager_me" />
+    <SUITE FILE_PATH="coverage/bookmark_manager_me@Bookmark_returns_false_for_an_invalid_URL__bookmark_manager_me.rcov" NAME="Bookmark returns false for an invalid URL: bookmark_manager_me Coverage Results" MODIFIED="1559832395811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bookmark_manager_me" />
     <SUITE FILE_PATH="coverage/bookmark_manager_me@Bookmark__bookmark_manager_me.rcov" NAME="Bookmark: bookmark_manager_me Coverage Results" MODIFIED="1559829768570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bookmark_manager_me" />
   </component>
   <component name="editorHistoryManager">
@@ -473,24 +506,10 @@
     <entry file="file://$PROJECT_DIR$/views/index.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/bookmark_spec.rb">
+    <entry file="file://$PROJECT_DIR$/views/add.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bookmark.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -501,24 +520,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/add_bookmark_spec.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="126">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/add.erb">
+    <entry file="file://$PROJECT_DIR$/lib/bookmark.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+        <state relative-caret-position="257">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="355">
+          <caret line="44" column="61" lean-forward="true" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/bookmark_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/add_bookmark_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
     </entry>

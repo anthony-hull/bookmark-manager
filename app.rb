@@ -39,13 +39,10 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks/add' do
-
-    if params[:url] =~ /\A#{URI::regexp(['http', 'https'])}\z/
-      Bookmark.add(params[:url], params[:title])
+    if Bookmark.add(params[:url], params[:title])
       redirect '/bookmarks'
     else
-      # session[:error] = 'boogaloo is not a valid url'
-      flash[:notice] = "boogaloo is not a valid url"
+      flash[:notice] = "#{params[:title]} is not a valid url"
       redirect '/bookmarks/add'
     end
   end

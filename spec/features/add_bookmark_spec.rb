@@ -19,6 +19,7 @@ feature 'adds bookmark' do
   scenario 'creates invalid bookmark' do
     visit('/bookmarks/add')
     fill_in 'url', with: 'boogaloo'
+    fill_in 'title', with: 'boogaloo'
     click_button 'Submit'
     expect(page).to have_content('boogaloo is not a valid url')
   end

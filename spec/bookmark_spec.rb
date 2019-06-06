@@ -41,4 +41,12 @@ describe 'Bookmark' do
     bookmarks_t = bookmarks.map(&:title)
     expect(bookmarks_t).to include('Yahoo')
   end
+
+  it 'returns false for an invalid URL' do
+    expect(Bookmark.add('electric-boogaloo', 'rockdownto')).to eq(false)
+  end
+
+  it 'returns true for a valid URL' do
+    expect(Bookmark.add('https://google.com', 'rockdownto')).to eq(true)
+  end
 end
